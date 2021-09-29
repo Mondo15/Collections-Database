@@ -10,10 +10,10 @@ $query->execute();
 
 $result = $query->fetchAll();
 
+
 echo '<ul>';
 foreach ($result as $breweries) {
     echo '<li>' . $breweries['brewery'] . ' - - ' . $breweries['beer'] . ' - - ' . $breweries['location'] . ' - - ' . $breweries['style']  . ' - - ' . $breweries['abv'] . ' - - ' . $breweries['ibu'] . ' - - ' . $breweries['colour'] . ' - - ' . $breweries['description'] . ' - - ' . '</li>';
 }
 echo '</ul>';
-
-
+?>
